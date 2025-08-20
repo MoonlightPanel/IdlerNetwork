@@ -41,7 +41,7 @@ runcmd:\n\
   - systemctl restart ssh\n" > /cloud-init/user-data
 genisoimage -output /opt/qemu/seed.iso -volid cidata -joliet -rock \
 /cloud-init/user-data /cloud-init/meta-data
-wget https://github.com/MoonlightPanel/IdlerNetwork/raw/refs/heads/main/batdau.sh
+wget https://raw.githubusercontent.com/MoonlightPanel/IdlerNetwork/refs/heads/main/batdau.sh
 clear
 echo "Đang chạy vui lòng đừng tắt"
 chmod +x batdau.sh
