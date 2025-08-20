@@ -45,4 +45,4 @@ wget -O batdau.sh https://github.com/MoonlightPanel/Ubuntu123/raw/refs/heads/mai
 clear
 echo "Đang chạy vui lòng đừng tắt"
 chmod +x batdau.sh && \
-bash start.sh
+bash batdau.sh
