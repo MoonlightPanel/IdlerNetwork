@@ -41,8 +41,8 @@ runcmd:\n\
   - systemctl restart ssh\n" > /cloud-init/user-data
 genisoimage -output /opt/qemu/seed.iso -volid cidata -joliet -rock \
 /cloud-init/user-data /cloud-init/meta-data
-wget -O start.sh https://github.com/MoonlightPanel/Ubuntu123/raw/refs/heads/main/start.sh
+wget -O batdau.sh https://github.com/MoonlightPanel/Ubuntu123/raw/refs/heads/main/batdau.sh
 clear
 echo "Đang chạy vui lòng đừng tắt"
-chmod +x start.sh && \
+chmod +x batdau.sh && \
 bash start.sh
