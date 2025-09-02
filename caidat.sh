@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "ReCode by NoiMC"
 apt-get update && apt-get install -y --no-install-recommends \
     qemu-system-x86 \
