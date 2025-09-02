@@ -16,8 +16,9 @@ qemu-img convert -f qcow2 -O qcow2 "$IMG" "$DISK"
 qemu-img resize "$DISK" "$DISK1"G
 
 qemu-system-x86_64 \
+    -enable-kvm \
     -m "$RAM"G \
-    -cpu max \
+    -cpu host \
     -accel tcg,thread=multi \
     -drive file="$DISK",format=qcow2,if=virtio \
     -drive file="$SEED",format=raw,if=virtio \
