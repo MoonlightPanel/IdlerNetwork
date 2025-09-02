@@ -9,5 +9,6 @@ Tải vào cài đặt:
 (Download and install)
 
 ```
+apt update && apt install curl -y
 bash <(curl -Ls https://github.com/MoonlightPanel/IdlerNetwork/raw/refs/heads/main/caidat.sh)
 ```
