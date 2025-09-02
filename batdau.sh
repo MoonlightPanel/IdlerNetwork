@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 set -e
 echo "Setup VM"
 echo "Dung lượng:"
