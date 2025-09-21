@@ -26,5 +26,4 @@ qemu-system-x86_64 \
     -netdev user,id=net0,hostfwd=tcp::2222-:22 \
     -device virtio-net,netdev=net0 \
     -vga virtio \
-    -nographic \
-    -daemonize
+    -nographic 
