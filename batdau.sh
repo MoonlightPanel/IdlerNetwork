@@ -19,7 +19,7 @@ qemu-img resize "$DISK" "$DISK1"G
 qemu-system-x86_64 \
     -m "$RAM"G \
     -smp 2 \
-    -cpu host \
+    -cpu max \
     -accel tcg,thread=multi \
     -drive file="$DISK",format=qcow2,if=virtio \
     -drive file="$SEED",format=raw,if=virtio \
