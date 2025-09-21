@@ -18,11 +18,13 @@ qemu-img resize "$DISK" "$DISK1"G
 
 qemu-system-x86_64 \
     -m "$RAM"G \
-    -cpu max \
+    -smp 2 \
+    -cpu host \
     -accel tcg,thread=multi \
     -drive file="$DISK",format=qcow2,if=virtio \
     -drive file="$SEED",format=raw,if=virtio \
     -netdev user,id=net0,hostfwd=tcp::2222-:22 \
     -device virtio-net,netdev=net0 \
     -vga virtio \
-    -nographic
+    -nographic \
+    -daemonize
