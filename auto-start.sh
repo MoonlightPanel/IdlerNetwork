@@ -41,7 +41,6 @@ runcmd:\n\
   - systemctl restart ssh\n" > /cloud-init/user-data
 genisoimage -output /opt/qemu/seed.iso -volid cidata -joliet -rock \
 /cloud-init/user-data /cloud-init/meta-data
-wget https://raw.githubusercontent.com/MoonlightPanel/IdlerNetwork/refs/heads/main/start.sh
 clear
 set -e
 echo "Setup VM"
