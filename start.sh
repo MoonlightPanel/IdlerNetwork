@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
 # Thiết lập thư mục gốc là thư mục hiện tại của Pterodactyl (thường là /home/container)
 BASE_DIR="$PWD"
